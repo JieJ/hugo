@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.14" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> My New Hugo Site &middot; My New Hugo Site </title>
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="http://localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+  
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$']]},
+        "HTML-CSS": 
+          {scale: 92},
+        TeX: { equationNumbers: { autoNumber: "AMS" }}});
+    </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</script>
+</head>
+
+<body class="">
+
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://localhost:1313/"><h1>My New Hugo Site</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="/">Home</a> </li>
+      
+    </ul>
+
+    <p>&copy; 2015. All rights reserved. </p>
+  </div>
+</div>
+
+
+    <div class="content container">
+<div class="posts">
+
+      
+  <div class="post">
+    <h1 class="post-title">
+      <a href="http://localhost:1313/post/script/">
+        script
+      </a>
+    </h1>
+
+    <span class="post-date">Tue, Sep 8, 2015</span>
+
+    
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="http://localhost:1313/post/blog/">
+        blog
+      </a>
+    </h1>
+
+    <span class="post-date">Tue, Sep 8, 2015</span>
+
+    
+
+<h4 id="我不能忍:e95c7dc8eefee7d0e25121cd7f0007ae">我不能忍！！！</h4>
+
+<h4 id="一-coae2015-基于svm的中文微博观点倾向性识别:e95c7dc8eefee7d0e25121cd7f0007ae">一、COAE2015：基于SVM的中文微博观点倾向性识别</h4>
+
+<h5 id="用于主客观分类:e95c7dc8eefee7d0e25121cd7f0007ae">用于主客观分类</h5>
+
+<h6 id="句式特征:e95c7dc8eefee7d0e25121cd7f0007ae">句式特征</h6>
+
+<p>否定词数量，语气词数量，问号数量，反问句式词数量， 感叹句数量，省略号数量</p>
+
+<h6 id="句内特征:e95c7dc8eefee7d0e25121cd7f0007ae">句内特征</h6>
+
+<p>动词数量，形容词数量，副词数量，情感词数量，评价词数量主观指示词数量
+程度副词数量，人称代词数量， 数词数量，方位词谁昂，量词数量</p>
+
+<h6 id="隐性特征-2-pos:e95c7dc8eefee7d0e25121cd7f0007ae">隐性特征：2-POS</h6>
+
+<p>计算2-POS模型的卡方值（CHI），进行降序排列，取前5个2-POS项
+第18个特征记为：</p>
+
+<p>$$ F18 = \sum_{i=1}^{5}x_i$$
+其中i=1,2,3,4,5 $x_i$ 为CHI排名为i的2-POS模式的值
+卡方值计算方式如下：
+$$ \chi^2(pattern_i,O) = \frac{N \times (A \times D-C \times B)^2}{(A+C)(B+D)(A+B)(C+D)} $$</p>
+
+<h5 id="2-用于情感值分类的特征:e95c7dc8eefee7d0e25121cd7f0007ae">2. 用于情感值分类的特征</h5>
+
+<h6 id="情感特征:e95c7dc8eefee7d0e25121cd7f0007ae">情感特征</h6>
+
+<p>正面情感词数量，负面情感词数量，正面评价词数量，负面评价词数量</p>
+
+<h6 id="句式特征-1:e95c7dc8eefee7d0e25121cd7f0007ae">句式特征</h6>
+
+<p>程度副词数量，否定词数量，反问句式词数量，语气词数量，感叹号数量，问号数量，省略号数量</p>
+
+<h6 id="词性特征:e95c7dc8eefee7d0e25121cd7f0007ae">词性特征</h6>
+
+<p>动词数量，形容词数量，副词数量</p>
+
+<h6 id="句间特征:e95c7dc8eefee7d0e25121cd7f0007ae">句间特征</h6>
+
+<p>转折连词数量</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="http://localhost:1313/post/neural%20network-3/">
+        neural network--backpropagation
+      </a>
+    </h1>
+
+    <span class="post-date">Tue, Sep 8, 2015</span>
+
+    
+
+<h4 id="how-the-backpropagation-algorithm-works:dc0e0e4f946020fd37f983facbed50cf">How the backpropagation algorithm works</h4>
+
+<h6 id="1-warm-up-a-fast-matrix-based-approach-to-computing-the-output-from-a-neural-network:dc0e0e4f946020fd37f983facbed50cf">1. Warm up: a fast matrix-based approach to computing the output from a neural network</h6>
+
+<p>基于矩阵前向计算神经网络输出。</p>
+
+<h6 id="2-the-two-assumptions-we-need-about-the-cost-function:dc0e0e4f946020fd37f983facbed50cf">2. The two assumptions we need about the cost function</h6>
+
+<ul>
+<li>cost function can be written as an average
+$$ C = \frac {1}{n} \sum_xC_x $$</li>
+<li>cost function can be written as a function of the outputs from the neural network
+$\begin{eqnarray} C = \frac{1}{2} |y-a^L|^2 = \frac{1}{2} \sum_j (y_j-a^L_j)^2,\tag{27}\end{eqnarray}$
+对于输出层来说，我们就是这么做的。
+但是对于隐藏层，如何将损失函数写成是关于这一层输出的函数呢？</li>
+</ul>
+
+<h5 id="3-the-hadamard-product-s-t:dc0e0e4f946020fd37f983facbed50cf">3. The Hadamard product, s⊙t</h5>
+
+<p>elementwise multiplication
+$\begin{eqnarray}
+\left[\begin{array}{c} 1 \ 2 \end{array}\right]
+  \odot \left[\begin{array}{c} 3 \ 4\end{array} \right]
+= \left[ \begin{array}{c} 1 * 3 \ 2 * 4 \end{array} \right]
+= \left[ \begin{array}{c} 3 \ 8 \end{array} \right].
+\tag{28}\end{eqnarray}$</p>
+
+<h5 id="4-the-four-fundamental-equations-behind-backpropagation:dc0e0e4f946020fd37f983facbed50cf">4. The four fundamental equations behind backpropagation</h5>
+
+<p>首先计算神经元残差 $\delta^l<em>j$
+再将残差与梯度 $\partial C/ \partial w^l</em>{jk}$ 与 $\partial C/ \partial b^l<em>j$ 联系起来。
+$\partial C/ \partial w^l</em>{jk}$</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="http://localhost:1313/about/">
+        about
+      </a>
+    </h1>
+
+    <span class="post-date">Tue, Sep 8, 2015</span>
+
+    
+
+<h4 id="dddd:6083a88ee3411b0d17ce02d738f69d47">dddd</h4>
+
+  </div>
+  
+</div>
+</div>
+
+  <script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>

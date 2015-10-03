@@ -1,0 +1,115 @@
+	<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.14" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> blog &middot; My New Hugo Site </title>
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+  
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$']]},
+        "HTML-CSS": 
+          {scale: 92},
+        TeX: { equationNumbers: { autoNumber: "AMS" }}});
+    </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</script>
+</head>
+
+	<body class="">
+		<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://localhost:1313/"><h1>My New Hugo Site</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="/">Home</a> </li>
+      
+    </ul>
+
+    <p>&copy; 2015. All rights reserved. </p>
+  </div>
+</div>
+
+
+		<div class="content container">
+			<div class="post">
+			 	<h1>blog</h1>
+			  <span class="post-date">Tue, Sep 8, 2015</span>
+			      
+
+<h4 id="我不能忍:e95c7dc8eefee7d0e25121cd7f0007ae">我不能忍！！！</h4>
+
+<h4 id="一-coae2015-基于svm的中文微博观点倾向性识别:e95c7dc8eefee7d0e25121cd7f0007ae">一、COAE2015：基于SVM的中文微博观点倾向性识别</h4>
+
+<h5 id="用于主客观分类:e95c7dc8eefee7d0e25121cd7f0007ae">用于主客观分类</h5>
+
+<h6 id="句式特征:e95c7dc8eefee7d0e25121cd7f0007ae">句式特征</h6>
+
+<p>否定词数量，语气词数量，问号数量，反问句式词数量， 感叹句数量，省略号数量</p>
+
+<h6 id="句内特征:e95c7dc8eefee7d0e25121cd7f0007ae">句内特征</h6>
+
+<p>动词数量，形容词数量，副词数量，情感词数量，评价词数量主观指示词数量
+程度副词数量，人称代词数量， 数词数量，方位词谁昂，量词数量</p>
+
+<h6 id="隐性特征-2-pos:e95c7dc8eefee7d0e25121cd7f0007ae">隐性特征：2-POS</h6>
+
+<p>计算2-POS模型的卡方值（CHI），进行降序排列，取前5个2-POS项
+第18个特征记为：</p>
+
+<p>$$ F18 = \sum_{i=1}^{5}x_i$$
+其中i=1,2,3,4,5 $x_i$ 为CHI排名为i的2-POS模式的值
+卡方值计算方式如下：
+$$ \chi^2(pattern_i,O) = \frac{N \times (A \times D-C \times B)^2}{(A+C)(B+D)(A+B)(C+D)} $$</p>
+
+<h5 id="2-用于情感值分类的特征:e95c7dc8eefee7d0e25121cd7f0007ae">2. 用于情感值分类的特征</h5>
+
+<h6 id="情感特征:e95c7dc8eefee7d0e25121cd7f0007ae">情感特征</h6>
+
+<p>正面情感词数量，负面情感词数量，正面评价词数量，负面评价词数量</p>
+
+<h6 id="句式特征-1:e95c7dc8eefee7d0e25121cd7f0007ae">句式特征</h6>
+
+<p>程度副词数量，否定词数量，反问句式词数量，语气词数量，感叹号数量，问号数量，省略号数量</p>
+
+<h6 id="词性特征:e95c7dc8eefee7d0e25121cd7f0007ae">词性特征</h6>
+
+<p>动词数量，形容词数量，副词数量</p>
+
+<h6 id="句间特征:e95c7dc8eefee7d0e25121cd7f0007ae">句间特征</h6>
+
+<p>转折连词数量</p>
+
+			</div>
+
+			
+		</div>
+
+  <script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>
