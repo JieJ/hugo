@@ -1,4 +1,2 @@
-baseurl = "www.jiangjie.com"
 languageCode = "ch-en"
 title = "My New Hugo Site"
-theme = "hyde"
